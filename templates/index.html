@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Detect Copyrights with an AI
+        </title>
+    </head>
+    <body>
+        <div>
+            <form method="POST">
+                <label for="copy_data">Type in Data:</label>
+                <br>
+                <textarea id="copy_data" name="copy_data" rows="4" cols="50"></textarea>
+                <br>
+                <button type="submit">Click Me!</button>
+            </form>
+            
+            {% if data %}
+                {% for row in data %}
+                    <!-- We estimate, that the String "{{ row[0] }}" is a Copyright Statement by {{ 1- row[1] }} percent. -->
+                    {{ row }}
+                    <br> 
+                {% endfor %}
+            {% endif %}
+        </div>
+    </body>
+</html>
