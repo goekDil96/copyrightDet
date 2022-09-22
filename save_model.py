@@ -50,7 +50,7 @@ def main():
     # df.to_csv(os.path.join(os.getcwd(), "data", "pos_neg_copy_y__all1_processed.csv"))
 
     # clf = LogisticRegression(random_state=0, C=100, max_iter=100000000).fit(df, list(data.values()))
-    clf = GradientBoostingClassifier(random_state=0).fit(df, list(data.values()))
+    clf = GradientBoostingClassifier(random_state=0, learning_rate=0.91, min_samples_leaf=6).fit(df, list(data.values()))
     print(vars(clf))
 
     pkl_filename = "vectorizer.pkl"
@@ -61,11 +61,6 @@ def main():
     with open(os.path.join(os.getcwd(), "data", pkl_filename), "wb") as file:
         pickle.dump(clf, file)
 
-    # load model 
-    with open(pkl_filename, "rb") as file:
-        pickle_model = pickle.load(file)
-
-    predict = pickle_model.predict(X_test)
 
 if __name__ == "__main__":
     main()

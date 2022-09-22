@@ -32,6 +32,7 @@ class RuleBased:
         "detected_copyright detected_copyright detected_org detected_year": 0.0,
         "detected_copyright detected_copyright detected_year detected_year detected_org": 0.0,
         # strings with clear classes email
+        # "detected_copyright the": 0.0,
         "detected_copyright detected_copyright detected_email": 0.0,
         "detected_copyright detected_copyright detected_year detected_email": 0.0,
         "detected_copyright detected_copyright detected_email detected_year": 0.0,
@@ -78,7 +79,7 @@ def main():
         data = json.load(file)
 
 
-    corpus = data.keys()
+    corpus = ["copyright The OpenTelemetry Authors"]
 
     rule_based = RuleBased()
     result = rule_based.predict(corpus)

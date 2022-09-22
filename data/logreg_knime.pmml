@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PMML version="4.2" xmlns="http://www.dmg.org/PMML-4_2">
+  <Header copyright="dilGoe">
+    <Application name="KNIME" version="4.6.1"/>
+  </Header>
+  <DataDictionary numberOfFields="36">
+    <DataField name="Column0" optype="categorical" dataType="string"/>
+    <DataField name="corporation" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.8845704361391504"/>
+    </DataField>
+    <DataField name="corp" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.9225035462393543"/>
+    </DataField>
+    <DataField name="ltd" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.906613640014473"/>
+    </DataField>
+    <DataField name="inc" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.9178845273489742"/>
+    </DataField>
+    <DataField name="foundation" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.9815524120260087"/>
+    </DataField>
+    <DataField name="author" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.9767992155093296"/>
+    </DataField>
+    <DataField name="group" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.9877103799759581"/>
+    </DataField>
+    <DataField name="all rights reserved" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.9549975009885819"/>
+    </DataField>
+    <DataField name="this file is" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.8816356068917077"/>
+    </DataField>
+    <DataField name="enterprise" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.0"/>
+    </DataField>
+    <DataField name="incorporated" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.8582233718811685"/>
+    </DataField>
+    <DataField name="co" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.9856248732634663"/>
+    </DataField>
+    <DataField name="llc" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.912028539853814"/>
+    </DataField>
+    <DataField name="detected_year" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="detected_copyright detected_year" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.7450320840072612"/>
+    </DataField>
+    <DataField name="detected_copyright detected_year detected_year" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.5594696358777272"/>
+    </DataField>
+    <DataField name="detected_copyright detected_copyright detected_year" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.6451197333279112"/>
+    </DataField>
+    <DataField name="detected_copyright detected_copyright detected_year detected_year" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.47841197333998037"/>
+    </DataField>
+    <DataField name="gmbh" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.9087779221706094"/>
+    </DataField>
+    <DataField name="by" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.9466229283148341"/>
+    </DataField>
+    <DataField name="detected_copyright detected_copyright detected_org detected_year" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.5368152613499385"/>
+    </DataField>
+    <DataField name="detected_copyright detected_org detected_year" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.7238203998682903"/>
+    </DataField>
+    <DataField name="detected_copyright detected_copyright detected_person detected_year" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.5404585879898851"/>
+    </DataField>
+    <DataField name="detected_copyright detected_person detected_year" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.7547529978051009"/>
+    </DataField>
+    <DataField name="the" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.9911038105547114"/>
+    </DataField>
+    <DataField name="or its affiliates" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.918145023026514"/>
+    </DataField>
+    <DataField name="original author or authors" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.6917004206377233"/>
+    </DataField>
+    <DataField name="detected_other_words" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="detected_copyright detected_org" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="1.0"/>
+    </DataField>
+    <DataField name="detected_copyright detected_copyright detected_org" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.7562648457161355"/>
+    </DataField>
+    <DataField name="detected_copyright detected_person" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.9797731233291859"/>
+    </DataField>
+    <DataField name="detected_copyright detected_copyright detected_person" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.7382390472980471"/>
+    </DataField>
+    <DataField name="word_between_copyright" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.9679264250427333"/>
+    </DataField>
+    <DataField name="detected_copyright the" optype="continuous" dataType="double">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="0.934117018575009"/>
+    </DataField>
+    <DataField name="score" optype="categorical" dataType="string">
+      <Value value="1"/>
+      <Value value="0"/>
+    </DataField>
+  </DataDictionary>
+  <GeneralRegressionModel modelType="multinomialLogistic" functionName="classification" algorithmName="LogisticRegression" modelName="KNIME Logistic Regression" targetReferenceCategory="1">
+    <MiningSchema>
+      <MiningField name="corporation" invalidValueTreatment="asIs"/>
+      <MiningField name="corp" invalidValueTreatment="asIs"/>
+      <MiningField name="ltd" invalidValueTreatment="asIs"/>
+      <MiningField name="inc" invalidValueTreatment="asIs"/>
+      <MiningField name="foundation" invalidValueTreatment="asIs"/>
+      <MiningField name="author" invalidValueTreatment="asIs"/>
+      <MiningField name="group" invalidValueTreatment="asIs"/>
+      <MiningField name="all rights reserved" invalidValueTreatment="asIs"/>
+      <MiningField name="this file is" invalidValueTreatment="asIs"/>
+      <MiningField name="incorporated" invalidValueTreatment="asIs"/>
+      <MiningField name="co" invalidValueTreatment="asIs"/>
+      <MiningField name="llc" invalidValueTreatment="asIs"/>
+      <MiningField name="detected_year" invalidValueTreatment="asIs"/>
+      <MiningField name="detected_copyright detected_year" invalidValueTreatment="asIs"/>
+      <MiningField name="detected_copyright detected_year detected_year" invalidValueTreatment="asIs"/>
+      <MiningField name="detected_copyright detected_copyright detected_year" invalidValueTreatment="asIs"/>
+      <MiningField name="detected_copyright detected_copyright detected_year detected_year" invalidValueTreatment="asIs"/>
+      <MiningField name="gmbh" invalidValueTreatment="asIs"/>
+      <MiningField name="by" invalidValueTreatment="asIs"/>
+      <MiningField name="detected_copyright detected_copyright detected_org detected_year" invalidValueTreatment="asIs"/>
+      <MiningField name="detected_copyright detected_org detected_year" invalidValueTreatment="asIs"/>
+      <MiningField name="detected_copyright detected_copyright detected_person detected_year" invalidValueTreatment="asIs"/>
+      <MiningField name="detected_copyright detected_person detected_year" invalidValueTreatment="asIs"/>
+      <MiningField name="the" invalidValueTreatment="asIs"/>
+      <MiningField name="or its affiliates" invalidValueTreatment="asIs"/>
+      <MiningField name="original author or authors" invalidValueTreatment="asIs"/>
+      <MiningField name="detected_other_words" invalidValueTreatment="asIs"/>
+      <MiningField name="detected_copyright detected_org" invalidValueTreatment="asIs"/>
+      <MiningField name="detected_copyright detected_copyright detected_org" invalidValueTreatment="asIs"/>
+      <MiningField name="detected_copyright detected_person" invalidValueTreatment="asIs"/>
+      <MiningField name="detected_copyright detected_copyright detected_person" invalidValueTreatment="asIs"/>
+      <MiningField name="word_between_copyright" invalidValueTreatment="asIs"/>
+      <MiningField name="detected_copyright the" invalidValueTreatment="asIs"/>
+      <MiningField name="score" invalidValueTreatment="asIs" usageType="target"/>
+    </MiningSchema>
+    <ParameterList>
+      <Parameter name="p0" label="Intercept"/>
+      <Parameter name="p1" label="corporation"/>
+      <Parameter name="p2" label="corp"/>
+      <Parameter name="p3" label="ltd"/>
+      <Parameter name="p4" label="inc"/>
+      <Parameter name="p5" label="foundation"/>
+      <Parameter name="p6" label="author"/>
+      <Parameter name="p7" label="group"/>
+      <Parameter name="p8" label="all rights reserved"/>
+      <Parameter name="p9" label="this file is"/>
+      <Parameter name="p10" label="incorporated"/>
+      <Parameter name="p11" label="co"/>
+      <Parameter name="p12" label="llc"/>
+      <Parameter name="p13" label="detected_year"/>
+      <Parameter name="p14" label="detected_copyright detected_year"/>
+      <Parameter name="p15" label="detected_copyright detected_year detected_year"/>
+      <Parameter name="p16" label="detected_copyright detected_copyright detected_year"/>
+      <Parameter name="p17" label="detected_copyright detected_copyright detected_year detected_year"/>
+      <Parameter name="p18" label="gmbh"/>
+      <Parameter name="p19" label="by"/>
+      <Parameter name="p20" label="detected_copyright detected_copyright detected_org detected_year"/>
+      <Parameter name="p21" label="detected_copyright detected_org detected_year"/>
+      <Parameter name="p22" label="detected_copyright detected_copyright detected_person detected_year"/>
+      <Parameter name="p23" label="detected_copyright detected_person detected_year"/>
+      <Parameter name="p24" label="the"/>
+      <Parameter name="p25" label="or its affiliates"/>
+      <Parameter name="p26" label="original author or authors"/>
+      <Parameter name="p27" label="detected_other_words"/>
+      <Parameter name="p28" label="detected_copyright detected_org"/>
+      <Parameter name="p29" label="detected_copyright detected_copyright detected_org"/>
+      <Parameter name="p30" label="detected_copyright detected_person"/>
+      <Parameter name="p31" label="detected_copyright detected_copyright detected_person"/>
+      <Parameter name="p32" label="word_between_copyright"/>
+      <Parameter name="p33" label="detected_copyright the"/>
+    </ParameterList>
+    <FactorList/>
+    <CovariateList>
+      <Predictor name="corporation"/>
+      <Predictor name="corp"/>
+      <Predictor name="ltd"/>
+      <Predictor name="inc"/>
+      <Predictor name="foundation"/>
+      <Predictor name="author"/>
+      <Predictor name="group"/>
+      <Predictor name="all rights reserved"/>
+      <Predictor name="this file is"/>
+      <Predictor name="incorporated"/>
+      <Predictor name="co"/>
+      <Predictor name="llc"/>
+      <Predictor name="detected_year"/>
+      <Predictor name="detected_copyright detected_year"/>
+      <Predictor name="detected_copyright detected_year detected_year"/>
+      <Predictor name="detected_copyright detected_copyright detected_year"/>
+      <Predictor name="detected_copyright detected_copyright detected_year detected_year"/>
+      <Predictor name="gmbh"/>
+      <Predictor name="by"/>
+      <Predictor name="detected_copyright detected_copyright detected_org detected_year"/>
+      <Predictor name="detected_copyright detected_org detected_year"/>
+      <Predictor name="detected_copyright detected_copyright detected_person detected_year"/>
+      <Predictor name="detected_copyright detected_person detected_year"/>
+      <Predictor name="the"/>
+      <Predictor name="or its affiliates"/>
+      <Predictor name="original author or authors"/>
+      <Predictor name="detected_other_words"/>
+      <Predictor name="detected_copyright detected_org"/>
+      <Predictor name="detected_copyright detected_copyright detected_org"/>
+      <Predictor name="detected_copyright detected_person"/>
+      <Predictor name="detected_copyright detected_copyright detected_person"/>
+      <Predictor name="word_between_copyright"/>
+      <Predictor name="detected_copyright the"/>
+    </CovariateList>
+    <PPMatrix>
+      <PPCell value="1" predictorName="corporation" parameterName="p1"/>
+      <PPCell value="1" predictorName="corp" parameterName="p2"/>
+      <PPCell value="1" predictorName="ltd" parameterName="p3"/>
+      <PPCell value="1" predictorName="inc" parameterName="p4"/>
+      <PPCell value="1" predictorName="foundation" parameterName="p5"/>
+      <PPCell value="1" predictorName="author" parameterName="p6"/>
+      <PPCell value="1" predictorName="group" parameterName="p7"/>
+      <PPCell value="1" predictorName="all rights reserved" parameterName="p8"/>
+      <PPCell value="1" predictorName="this file is" parameterName="p9"/>
+      <PPCell value="1" predictorName="incorporated" parameterName="p10"/>
+      <PPCell value="1" predictorName="co" parameterName="p11"/>
+      <PPCell value="1" predictorName="llc" parameterName="p12"/>
+      <PPCell value="1" predictorName="detected_year" parameterName="p13"/>
+      <PPCell value="1" predictorName="detected_copyright detected_year" parameterName="p14"/>
+      <PPCell value="1" predictorName="detected_copyright detected_year detected_year" parameterName="p15"/>
+      <PPCell value="1" predictorName="detected_copyright detected_copyright detected_year" parameterName="p16"/>
+      <PPCell value="1" predictorName="detected_copyright detected_copyright detected_year detected_year" parameterName="p17"/>
+      <PPCell value="1" predictorName="gmbh" parameterName="p18"/>
+      <PPCell value="1" predictorName="by" parameterName="p19"/>
+      <PPCell value="1" predictorName="detected_copyright detected_copyright detected_org detected_year" parameterName="p20"/>
+      <PPCell value="1" predictorName="detected_copyright detected_org detected_year" parameterName="p21"/>
+      <PPCell value="1" predictorName="detected_copyright detected_copyright detected_person detected_year" parameterName="p22"/>
+      <PPCell value="1" predictorName="detected_copyright detected_person detected_year" parameterName="p23"/>
+      <PPCell value="1" predictorName="the" parameterName="p24"/>
+      <PPCell value="1" predictorName="or its affiliates" parameterName="p25"/>
+      <PPCell value="1" predictorName="original author or authors" parameterName="p26"/>
+      <PPCell value="1" predictorName="detected_other_words" parameterName="p27"/>
+      <PPCell value="1" predictorName="detected_copyright detected_org" parameterName="p28"/>
+      <PPCell value="1" predictorName="detected_copyright detected_copyright detected_org" parameterName="p29"/>
+      <PPCell value="1" predictorName="detected_copyright detected_person" parameterName="p30"/>
+      <PPCell value="1" predictorName="detected_copyright detected_copyright detected_person" parameterName="p31"/>
+      <PPCell value="1" predictorName="word_between_copyright" parameterName="p32"/>
+      <PPCell value="1" predictorName="detected_copyright the" parameterName="p33"/>
+    </PPMatrix>
+    <ParamMatrix>
+      <PCell targetCategory="0" parameterName="p0" beta="-5.248851288095861" df="1"/>
+      <PCell targetCategory="0" parameterName="p1" beta="12.335483637904124" df="1"/>
+      <PCell targetCategory="0" parameterName="p2" beta="1.973901635390618" df="1"/>
+      <PCell targetCategory="0" parameterName="p3" beta="12.094495353466192" df="1"/>
+      <PCell targetCategory="0" parameterName="p4" beta="4.923223872508064" df="1"/>
+      <PCell targetCategory="0" parameterName="p5" beta="6.394344142183033" df="1"/>
+      <PCell targetCategory="0" parameterName="p6" beta="-2.79851877359158" df="1"/>
+      <PCell targetCategory="0" parameterName="p7" beta="3.1206815328302957" df="1"/>
+      <PCell targetCategory="0" parameterName="p8" beta="19.191337579925175" df="1"/>
+      <PCell targetCategory="0" parameterName="p9" beta="8.562827372397422" df="1"/>
+      <PCell targetCategory="0" parameterName="p10" beta="4.082328047813982" df="1"/>
+      <PCell targetCategory="0" parameterName="p11" beta="2.238429935700097" df="1"/>
+      <PCell targetCategory="0" parameterName="p12" beta="9.535472761480884" df="1"/>
+      <PCell targetCategory="0" parameterName="p13" beta="2.442410219599699" df="1"/>
+      <PCell targetCategory="0" parameterName="p14" beta="9.49520056281608" df="1"/>
+      <PCell targetCategory="0" parameterName="p15" beta="8.622239096468851" df="1"/>
+      <PCell targetCategory="0" parameterName="p16" beta="6.125672827649007" df="1"/>
+      <PCell targetCategory="0" parameterName="p17" beta="-0.3949704162532894" df="1"/>
+      <PCell targetCategory="0" parameterName="p18" beta="12.853013458392722" df="1"/>
+      <PCell targetCategory="0" parameterName="p19" beta="2.668871685835955" df="1"/>
+      <PCell targetCategory="0" parameterName="p20" beta="11.14965008706264" df="1"/>
+      <PCell targetCategory="0" parameterName="p21" beta="6.492350624209554" df="1"/>
+      <PCell targetCategory="0" parameterName="p22" beta="2.320510037843754" df="1"/>
+      <PCell targetCategory="0" parameterName="p23" beta="11.111954281731231" df="1"/>
+      <PCell targetCategory="0" parameterName="p24" beta="-1.9283983166867424" df="1"/>
+      <PCell targetCategory="0" parameterName="p25" beta="10.887834425785943" df="1"/>
+      <PCell targetCategory="0" parameterName="p26" beta="13.08584627477094" df="1"/>
+      <PCell targetCategory="0" parameterName="p27" beta="1.0480066451896484" df="1"/>
+      <PCell targetCategory="0" parameterName="p28" beta="6.026059018543481" df="1"/>
+      <PCell targetCategory="0" parameterName="p29" beta="3.6199265522810733" df="1"/>
+      <PCell targetCategory="0" parameterName="p30" beta="5.5117077355032995" df="1"/>
+      <PCell targetCategory="0" parameterName="p31" beta="15.41847259463496" df="1"/>
+      <PCell targetCategory="0" parameterName="p32" beta="-2.627495810530279" df="1"/>
+      <PCell targetCategory="0" parameterName="p33" beta="3.7862049366631356" df="1"/>
+    </ParamMatrix>
+  </GeneralRegressionModel>
+</PMML>

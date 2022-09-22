@@ -18,7 +18,7 @@ del y_train
 
 X_test1, X_test2, y_test1, y_test2 = train_test_split(X_test, y_test, stratify=y_test, test_size=0.5)
 
-# save train data
+# save test data
 df = pd.DataFrame(y_test1, index=X_test1, columns=["score"])
 df.T.to_json(os.path.join(os.getcwd(), "data", "pos_neg_copy_y_test1.json"), orient="records")
 
