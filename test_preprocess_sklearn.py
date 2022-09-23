@@ -1,16 +1,17 @@
 import os
 import sys
 sys.path.insert(0, os.path.join(os.getcwd(), "copyrightDet"))
-import matplotlib.pyplot as plt
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.ensemble import GradientBoostingClassifier
-import pandas as pd
 import json
+import pandas as pd
+
 from copyrightDet.match_string import MatchString
 from copyrightDet.rule_based import RuleBased
-from sklearn.metrics import ConfusionMatrixDisplay
 
-from sklearn_pmml_model.ensemble import PMMLGradientBoostingClassifier
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.metrics import ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
+
 from pypmml import Model
 
 
@@ -45,21 +46,16 @@ def main():
     print("\n")
     print("DataFrame:")
     df = pd.DataFrame(X_test.toarray(), index=corpus, columns=vectorizer.get_feature_names_out())
-    # df["score"] = data.values()
-    # df.drop_duplicates(inplace=True)
-    # df.to_csv(os.path.join(os.getcwd(), "data", "pos_neg_copy_y__all1_processed.csv"))
-    
-    # clf = PMMLGradientBoostingClassifier("data/gradboos_knime.pmml")
-    clf = Model.load('data/gradboos_knime.pmml')
+
+    clf = Model.load(os.path.join(os.getcwd(), "data", "gradboos_knime.pmml"))
     # clf = GradientBoostingClassifier(random_state=0, max_depth=4, learning_rate=0.05, n_estimators=190).fit(df, list(data.values()))
-    y_pred_proba = clf.predict_proba(df)
-    y_pred_or = clf.predict(df)
+    y_pred_proba = clf.predict(df).values[:,1]
+    y_pred_or = [0 if y_pred_proba[i] < 0.3839676779502669 else 1 for i in range(len(y_pred_proba))]
 
     y_pred = [int(result[i]) if result[i] != 0.5 else y_pred_or[i] for i in range(len(result))]
-    print(clf.score(df, list(data.values())))
 
-    ConfusionMatrixDisplay.from_estimator(clf, df, list(data.values()))
-    # ConfusionMatrixDisplay.from_predictions(list(data.values()), y_pred)
+    # ConfusionMatrixDisplay.from_estimator(clf, df, list(data.values()))
+    ConfusionMatrixDisplay.from_predictions(list(data.values()), y_pred)
 
     for i in range(len(list(data.keys()))):
         if list(data.values())[i] == 0 and y_pred[i] >= 0.5:

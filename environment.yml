@@ -6,7 +6,7 @@ dependencies:
   - python=3.9
   - pip=22.2
   - jupyterlab=3.4.5
-  - spacy-model-en_core_web_sm==3.3.0
+  - spacy-model-en_core_web_sm=3.3.0
   - java-jdk=8.25.17
   - pip:
     - scikit-learn==1.1.2
@@ -22,5 +22,4 @@ dependencies:
     - matplotlib==3.5.3
     - wasabi==0.9.1
     - Flask==2.2.2
-    - sklearn-pmml-model==1.0.0
     - pypmml==0.9.16
