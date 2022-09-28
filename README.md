@@ -1,6 +1,8 @@
 copyrightDet
 ============
 
+A repository to detect Copyrights.
+
 Prerequisits
 ------------
 

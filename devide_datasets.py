@@ -1,3 +1,7 @@
+#
+# SPDX-FileCopyrightText: Copyright 2022 Dilara Göksu
+#
+
 from sklearn.model_selection import train_test_split
 import os 
 import json

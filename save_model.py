@@ -1,3 +1,7 @@
+#
+# SPDX-FileCopyrightText: Copyright 2022 Dilara Göksu
+#
+
 import os
 import sys
 import pickle

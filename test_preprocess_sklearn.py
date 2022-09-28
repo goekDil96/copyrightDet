@@ -1,3 +1,7 @@
+#
+# SPDX-FileCopyrightText: Copyright 2022 Dilara Göksu
+#
+
 import os
 import sys
 sys.path.insert(0, os.path.join(os.getcwd(), "copyrightDet"))
@@ -18,10 +22,8 @@ from pypmml import Model
 def main():
     prePro = MatchString()
 
-    with open(os.path.join(os.getcwd(), "data", "pos_neg_copy_y_train.json"), "r", encoding="utf8") as file:
+    with open(os.path.join(os.getcwd(), "data", "pos_neg_copy_y_test2.json"), "r", encoding="utf8") as file:
         data = json.load(file)
-
-    
 
     corpus = data.keys()
 
@@ -54,51 +56,9 @@ def main():
 
     y_pred = [int(result[i]) if result[i] != 0.5 else y_pred_or[i] for i in range(len(result))]
 
-    # ConfusionMatrixDisplay.from_estimator(clf, df, list(data.values()))
     ConfusionMatrixDisplay.from_predictions(list(data.values()), y_pred)
 
-    for i in range(len(list(data.keys()))):
-        if list(data.values())[i] == 0 and y_pred[i] >= 0.5:
-            print(list(data.keys())[i], list(data.values())[i], y_pred[i])
-        if list(data.values())[i] == 1 and y_pred[i] <= 0.5:
-            print(list(data.keys())[i], list(data.values())[i], y_pred[i])
-
-
     plt.show()
-
-    plt.scatter(y_pred_proba[:,1], list(data.values()))
-    plt.show()
-
-    for i in [1, 2]:
-        with open(os.path.join(os.getcwd(), "data", f"pos_neg_copy_y_test{i}.json"), "r", encoding="utf8") as file:
-            data1 = json.load(file)
-
-        result = rule_based.predict(data1.keys())
-        
-        X_train = vectorizer.fit_transform(data1.keys())
-
-        df1 = pd.DataFrame(X_train.toarray(), index=data1.keys(), columns=vectorizer.get_feature_names_out())
-        y_pred_or = clf.predict(df1)
-
-        y_pred = [int(result[i]) if result[i] != 0.5 else y_pred_or[i] for i in range(len(result))]
-
-        y_pred_proba = clf.predict_proba(df1)
-        print(clf.score(df1, list(data1.values())))
-        # ConfusionMatrixDisplay.from_estimator(clf, df1, list(data1.values()))
-        ConfusionMatrixDisplay.from_predictions(list(data1.values()), y_pred)
-
-        for i in range(len(list(data1.keys()))):
-            if list(data1.values())[i] == 0 and y_pred[i] >= 0.5:
-                print(list(data1.keys())[i], list(data1.values())[i], y_pred[i])
-            if list(data1.values())[i] == 1 and y_pred[i] <= 0.5:
-                print(list(data1.keys())[i], list(data1.values())[i], y_pred[i])
-
-
-        plt.show()
-
-        plt.scatter(y_pred_proba[:,1], list(data1.values()))
-        plt.show()
-
 
 if __name__ == "__main__":
     main()

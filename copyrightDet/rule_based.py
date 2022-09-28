@@ -1,3 +1,7 @@
+#
+# SPDX-FileCopyrightText: Copyright 2022 Dilara Göksu
+#
+
 from .match_string import MatchString
 import os
 import json

@@ -1,3 +1,7 @@
+#
+# SPDX-FileCopyrightText: Copyright 2022 Dilara Göksu
+#
+
 from dataclasses import replace
 from commonregex import CommonRegex
 import re
